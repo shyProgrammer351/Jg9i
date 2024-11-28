@@ -4,15 +4,240 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="../layout.css">
+		<script type="text/javascript" src="../functions.js"></script>
+		<script></script>
 	</head>
 	<body oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false">
 		<div id = "container">
 			<div id = "titleBox"> JAVA 프로그래밍 </div>
-			<div id = "navigationBox"><ol start=0><li><a href='../Jf0i/Jf0i0.html'>JAVA 프로그래밍 시작</a></li><ul></ul><li><a href='../Jf1i/Jf1i0.html'>출력</a></li><li><a href='../Jf2i/Jf2i0.html'>입력</a></li><li><a href='../Jf3i/Jf3i0.html'>변수</a></li><li><a href='../Jf4i/Jf4i0.html'>연산자</a></li><li><a href='../Jf5i/Jf5i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(if)</a></li><li><a href='../Jf7i/Jf7i0.html'>반복문(while)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(for)</a></li><li><a href='../Jf9i/Jf9i0.html'>배열</a></li><li><a href='../Jg0i/Jg0i0.html'>문자열/컬렉션</a></li><li><a href='../Jg1i/Jg1i0.html'>클래스/패키지</a></li><li><a href='../Jg2i/Jg2i0.html'>상속/다형성</a></li><li><a href='../Jg3i/Jg3i0.html'>GUI기초</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI응용</a></li><li><a href='../Jg5i/Jg5i0.html'>예외/쓰레드</a></li><li><a href='../Jg6i/Jg6i0.html'>파일입출력</a></li><li><a href='../Jg7i/Jg7i0.html'>네트워크(1:1)</a></li><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:n)</a></li><li><a href='../Jg9i/Jg9i0.html'>열거형/제네릭</a></li><li><a href='../Jh0i/Jh0i0.html'>재귀함수</a></li></ol></div> 
+			<div id = "navigationBox"><ol start=0><li><a href='../Jf0i/Jf0i0.html'>JAVA 프로그래밍 시작</a></li><li><a href='../Jf1i/Jf1i0.html'>출력</a></li><li><a href='../Jf2i/Jf2i0.html'>입력</a></li><li><a href='../Jf3i/Jf3i0.html'>변수</a></li><li><a href='../Jf4i/Jf4i0.html'>연산자</a></li><li><a href='../Jf5i/Jf5i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(if)</a></li><li><a href='../Jf7i/Jf7i0.html'>반복문(while)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(for)</a></li><li><a href='../Jf9i/Jf9i0.html'>배열</a></li><li><a href='../Jg0i/Jg0i0.html'>문자열/컬렉션</a></li><li><a href='../Jg1i/Jg1i0.html'>클래스/패키지</a></li><li><a href='../Jg2i/Jg2i0.html'>상속/다형성</a></li><li><a href='../Jg3i/Jg3i0.html'>GUI기초</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI응용</a></li><li><a href='../Jg5i/Jg5i0.html'>예외/쓰레드</a></li><li><a href='../Jg6i/Jg6i0.html'>파일입출력</a></li><li><a href='../Jg7i/Jg7i0.html'>네트워크(1:1)</a></li><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:n)</a></li><li><a href='../Jg9i/Jg9i0.html'>열거형/제네릭</a></li><ul><li><a href='../Jg9i/Jg9i1.html'>캐릭터 한 칸 이동</a></li><li><a href='../Jg9i/Jg9i2.html'>정렬(제네릭 메서드)</a></li></ul><li><a href='../Jh0i/Jh0i0.html'>재귀함수</a></li></ol></div> 
 			<div id = "contentBox">
-				<h3> </h3>
-<br>준비중입니다 
+				<h3>19. 열거형/제네릭 </h3>
+<h4>열거형</h4>
 
+<span style='color:red;'>enum</span> &nbsp; 변수에 저장할 수 있는 상수값에 의미를 부여하여 열거한 자료형 
+<br><br>
+
+<table style='width:790px; font-size:14px; margin:0; padding:10px; border:1px solid #bcbcbc'>
+	<tr>
+		<td>
+			<span style='color:red;'>enum</span> 열거형이름 { 상수값<sub>1</sub>, ..., 상수값<sub>n</sub> }; 
+		</td>
+	</tr>
+</table>
+<br>
+<table style='width:790px; font-size:14px; margin:0; padding:10px; border:1px solid #bcbcbc'>
+	<tr>
+		<td>
+			<span style='color:red;'>enum Note</span> { DO, RE, MI, FA, SOL, LA, TI };
+			<br><span style='color:red;'>Note</span> sound = Note.FA;
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br>
+			<span style='color:red;'>enum Color</span> { RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, PURPLE  };
+			<br><span style='color:red;'>Color</span> color = Color.GREEN;
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<br>
+			<span style='color:red;'>enum RPSGame</span> { SCISSOR, ROCK, PAPER };
+			<br><span style='color:red;'>RPSGame</span> player = RPSGame.SCISSOR;
+		</td>
+	</tr>
+</table>	
+<br>
+<table style='width:790px; font-size:14px; margin:0; padding:10px; border:1px solid #bcbcbc'>
+	<tr>
+		<td style='text-align:left'>
+       import java.util.Scanner;
+       <br> public class Direction
+       <br> {
+       <br> &nbsp; <span style='color:red;'>enum Direction</span> { left, right, up, down };
+       <br> &nbsp; public static void main( String[] args ) {
+       <br> &nbsp; &nbsp; Scanner scan = new Scanner( System.in );
+       <br> &nbsp; &nbsp; System.out.println( "      / " );
+       <br> &nbsp; &nbsp; System.out.println( " [   옷   문" );
+       <br> &nbsp; &nbsp; System.out.println( "      -> \n" );
+       <br> &nbsp; &nbsp; System.out.print("left, right, up, down을 입력하세요:");
+       <br> &nbsp; &nbsp; <span style='color:red;'>Direction</span> move = <span style='color:red;'>Direction.valueOf</span>( scan.next() );
+       <br> &nbsp; &nbsp; System.out.print( "\033[2;6f  " );
+       <br> &nbsp; &nbsp; switch( move ) {
+       <br> &nbsp; &nbsp; &nbsp; case <span style='color:red;'>up</span>:
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; System.out.print( "\033[1;6f 옷/" );
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; break;
+       <br> &nbsp; &nbsp; &nbsp; case <span style='color:red;'>down</span>:
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; System.out.print( "\033[3;6f 옷->" );
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; break;
+       <br> &nbsp; &nbsp; &nbsp; case <span style='color:red;'>left</span>:
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; System.out.print( "\033[2;1f 옷]" );
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; break;
+       <br> &nbsp; &nbsp; &nbsp; case <span style='color:red;'>right</span>:
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; System.out.print( "\033[2J\033[4;15fSUCCESS!" );
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; break;
+       <br> &nbsp; &nbsp; }
+       <br> &nbsp; &nbsp; scan.close();
+       <br> &nbsp; }
+       <br> }
+		</td>
+		<td>
+       import java.util.Scanner;
+       <br> public class Direction
+       <br> {
+       <br> &nbsp;
+       <br> &nbsp; public static void main( String[] args ) {
+       <br> &nbsp; &nbsp; Scanner scan = new Scanner( System.in );
+       <br> &nbsp; &nbsp; System.out.println( "      / " );
+       <br> &nbsp; &nbsp; System.out.println( " [   옷   문" );
+       <br> &nbsp; &nbsp; System.out.println( "      -> \n" );
+       <br> &nbsp; &nbsp; System.out.print( "WASD와[Enter]를 입력하세요: " );
+       <br> &nbsp; &nbsp; <span style='color:red;'>char</span> move = scan.nextLine().charAt(0);
+       <br> &nbsp; &nbsp; System.out.print( "\033[2;6f  " );
+       <br> &nbsp; &nbsp; switch( move ) {
+       <br> &nbsp; &nbsp; &nbsp; case <span style='color:red;'>'w'</span>: 
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; System.out.print( "\033[1;6f 옷/" );
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; break;
+       <br> &nbsp; &nbsp; &nbsp; case <span style='color:red;'>'s'</span>:
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; System.out.print( "\033[3;6f 옷->" );
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; break;
+       <br> &nbsp; &nbsp; &nbsp; case <span style='color:red;'>'a'</span>: 
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; System.out.print( "\033[2;1f 옷]" );
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; break;
+       <br> &nbsp; &nbsp; &nbsp; case <span style='color:red;'>'d'</span>:
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; System.out.print( "\033[2J\033[4;15fSUCCESS!" );
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; break;
+       <br> &nbsp; &nbsp; }
+       <br> &nbsp; &nbsp; scan.close();
+       <br> &nbsp; }
+       <br> }
+		</td>
+	</tr>
+</table>
+<br>
+<h4>제네릭</h4>
+
+<span style='color:red;'>T</span> &nbsp; 제네릭 타입으로 미지의 자료형을 나타내며 객체 인스턴스 생성시 자료형이 구체화
+<br>
+<br><span style='color:red;'>extends</span> &nbsp; 제네릭 타입에서 클래스나 인터페이스의 상속관계를 표현
+<br>
+<br><span style='color:red;'>Comparable</span> &nbsp; 두 값을 비교하는 compareTo 메서드를 제공하는 인터페이스
+<br>
+<br>
+<table style='width:790px; margin:0; padding:10px; border:1px solid #bcbcbc; font-size: 14px;'>
+	<tr>
+		<td style='width:380px;'>
+       ArrayList<span style='color:red;'>&lt;String&gt;</span> words = new ArrayList<span style='color:red;'>&lt;String&gt;</span>(); 
+       <br> words.add( "carrot" );
+       <br> words.add( "banana" );
+       <br> words.add( "apple" );
+       <br> Collections.sort( words );
+		</td>
+		<td>
+       ArrayList<span style='color:red;'>&lt;Integer&gt;</span> scores = new ArrayList<span style='color:red;'>&lt;Integer&gt;</span>(); 
+       <br> scores.add( 90 ); 
+       <br> scores.add( 89 ); 
+       <br> scores.add( 86 ); 
+       <br> Collections.sort( scores );
+		</td>
+	</tr>
+</table>
+<br>	
+<table style='width:790px; margin:0; padding:10px; border:1px solid #bcbcbc; font-size: 14px;'>
+	<tr>
+		<td>
+       public class GenericSort
+       <br> {
+       <br> &nbsp;public static<span style='color:red;'>&lt;T extends Comparable&lt;T&gt;&gt;</span>void <span style='color:red;'>sort</span>(<span style='color:red;'>T</span>[] list){
+       <br> &nbsp; &nbsp; for ( int last = list.length - 1; last >= 0; last-- ) {
+       <br> &nbsp; &nbsp; &nbsp; for ( int index = 0; index < last; index++ ) {
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; if ( list[index].<span style='color:red;'>compareTo</span>( list[index+1] ) > 0 ) {
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style='color:red;'>T</span> temp = list[ index ];
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; list[index] = list[index+1]; 
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; list[index+1] = temp;
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; }
+       <br> &nbsp; &nbsp; &nbsp; }
+       <br> &nbsp; &nbsp; }
+       <br> &nbsp; }
+       <br> &nbsp; &nbsp; 
+       <br> &nbsp; &nbsp; 
+       <br> &nbsp; &nbsp; 
+       <br> &nbsp; &nbsp; 
+       <br> &nbsp; &nbsp; 
+       <br> &nbsp; &nbsp; 
+       <br> &nbsp; &nbsp; 
+       <br> &nbsp; &nbsp; 
+       <br> &nbsp; &nbsp; 
+       <br> &nbsp; &nbsp; 
+       <br> &nbsp; &nbsp; 
+       <br> &nbsp; public static <span style='color:red;'>&lt;T&gt;</span> void <span style='color:red;'>print</span>( <span style='color:red;'>T</span>[] list ) { 
+       <br> &nbsp; &nbsp; for ( <span style='color:red;'>T</span> element : list )
+       <br> &nbsp; &nbsp; &nbsp; System.out.print( element + " " );
+       <br> &nbsp; &nbsp; System.out.println();
+       <br> &nbsp; }
+       <br> &nbsp; &nbsp; 
+       <br> &nbsp; &nbsp; 
+       <br> &nbsp; &nbsp; 
+       <br> &nbsp; &nbsp; 
+       <br> &nbsp; &nbsp; 
+       <br> &nbsp; public static void main(String[] args) {
+       <br> &nbsp; &nbsp; Integer[] scores = new Integer[]{ 90, 89, 86 };
+       <br> &nbsp; &nbsp; <span style='color:red;'>sort</span>( scores );
+       <br> &nbsp; &nbsp; <span style='color:red;'>print</span>( scores );
+       <br> &nbsp; &nbsp; String[] words = new String[]{"carrot","banana","apple"};
+       <br> &nbsp; &nbsp; <span style='color:red;'>sort</span>( words );
+       <br> &nbsp; &nbsp; <span style='color:red;'>print</span>( words );
+       <br> &nbsp; }
+       <br> }
+		</td>
+		<td>
+       public class Sort
+       <br> {
+       <br> &nbsp; public static void <span style='color:red;'>sort</span>( String[] words ) {
+       <br> &nbsp; &nbsp; for ( int last = words.length - 1; last >= 0; last-- ) {
+       <br> &nbsp; &nbsp; &nbsp; for ( int index = 0; index < last; index++ ) {
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; if ( words[index].<span style='color:red;'>compareTo</span>( words[index+1] ) > 0 ) {
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; String temp = words[index];
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; words[index] = words[index+1];
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; words[index+1] = temp;
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; }
+       <br> &nbsp; &nbsp; &nbsp; }
+       <br> &nbsp; &nbsp; }
+       <br> &nbsp; }
+       <br> &nbsp; public static void <span style='color:red;'>sort</span>( Integer[] scores ) {
+       <br> &nbsp; &nbsp; for ( int last = scores.length - 1; last >= 0; last-- ) {
+       <br> &nbsp; &nbsp; &nbsp; for ( int index = 0; index < last; index++ ) {
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; if ( scores[index].<span style='color:red;'>compareTo</span>( scores[index+1]) > 0 ) {
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; int temp = scores[index];
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; scores[index] = scores[index+1];
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; scores[index+1] = temp;
+       <br> &nbsp; &nbsp; &nbsp; &nbsp; }
+       <br> &nbsp; &nbsp; &nbsp; }
+       <br> &nbsp; &nbsp; }
+       <br> &nbsp; }
+       <br> &nbsp; public static void <span style='color:red;'>print</span>( String[] words ) { 
+       <br> &nbsp; &nbsp; for ( String word : words )
+       <br> &nbsp; &nbsp; &nbsp; System.out.print( word + " " );
+       <br> &nbsp; &nbsp; System.out.println();
+       <br> &nbsp; }
+       <br> &nbsp; public static void <span style='color:red;'>print</span>( Integer[] scores ) { 
+       <br> &nbsp; &nbsp; for ( Integer score : scores )
+       <br> &nbsp; &nbsp; &nbsp; System.out.print( score + " " );
+       <br> &nbsp; &nbsp; System.out.println();
+       <br> &nbsp; }
+       <br> &nbsp; public static void main(String[] args) {
+       <br> &nbsp; &nbsp; Integer[] scores = new Integer[]{ 90, 89, 86 };
+       <br> &nbsp; &nbsp; <span style='color:red;'>sort</span>( scores );
+       <br> &nbsp; &nbsp; <span style='color:red;'>print</span>( scores );
+       <br> &nbsp; &nbsp; String[] words = new String[]{"carrot","banana","apple"};
+       <br> &nbsp; &nbsp; <span style='color:red;'>sort</span>( words );
+       <br> &nbsp; &nbsp; <span style='color:red;'>print</span>( words );
+       <br> &nbsp; }
+       <br> }
+		</td>
+	</tr>
+</table>
 
 				<br><br><br><br><br><br><br><br> &nbsp; 
 			</div>
