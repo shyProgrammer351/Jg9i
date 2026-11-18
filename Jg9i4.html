@@ -1,48 +1,419 @@
-<html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script type="text/javascript" src="../Js0J1f/J1904.js"></script> 	</head> 	<body onkeydown='sP3f4();' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol start=0><li><a href='../Jf0i/Jf0i0.html'>JAVA 프로그래밍 시작</a></li><li><a href='../Jf1i/Jf1i0.html'>출력</a></li><li><a href='../Jf2i/Jf2i0.html'>입력</a></li><li><a href='../Jf3i/Jf3i0.html'>변수</a></li><li><a href='../Jf4i/Jf4i0.html'>연산자</a></li><li><a href='../Jf5i/Jf5i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(if)</a></li><li><a href='../Jf7i/Jf7i0.html'>반복문(while)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(for)</a></li><li><a href='../Jf9i/Jf9i0.html'>배열</a></li><li><a href='../Jg0i/Jg0i0.html'>문자열/컬렉션</a></li><li><a href='../Jg1i/Jg1i0.html'>클래스/패키지</a></li><li><a href='../Jg2i/Jg2i0.html'>상속/다형성</a></li><li><a href='../Jg3i/Jg3i0.html'>GUI기초</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI응용</a></li><li><a href='../Jg5i/Jg5i0.html'>예외/스레드</a></li><li><a href='../Jg6i/Jg6i0.html'>파일입출력</a></li><li><a href='../Jg7i/Jg7i0.html'>네트워크(1:1)</a></li><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:n)</a></li><li><a href='../Jg9i/Jg9i0.html'>열거형/제네릭</a></li><ul><li><a href='../Jg9i/Jg9i1.html'>아이템 획득</a></li><li><a href='../Jg9i/Jg9i2.html'>색깔 심리테스트</a></li><li><a href='../Jg9i/Jg9i3.html'>제네릭 활용(정렬)</a></li><li><a href='../Jg9i/Jg9i4.html'>제네릭 메서드(정렬)</a></li><ul><li><a href='Jg9i4.html'>코드읽기</a></li><li><a href='Jg9i4a.html'>알고리즘</a></li><li><a href='Jg9i4k.html'>키워드</a></li><li><a href='Jg9i4b.html'>빈칸채우기</a></li><li><a href='Jg9i4s.html'>실행순서</a></li><li><a href='Jg9i4m.html'>실행상태</a></li><li><a href='https://github.com/CodeReading101/JAVA/blob/main/Chapter19/GenericMethodMain.java' target='code'>소스코드</a></li></ul><li><a href='../Jg9i/Jg9i5.html'>제네릭 클래스(리스트)</a></li></ul><li><a href='../Jh0i/Jh0i0.html'>재귀호출</a></li></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>제네릭 메서드를 바탕으로 점수 및 단어를 정렬하는 문제입니다 이를 해결하는 다음 프로그램을 해석하세요 </pre> 				<pre class='selectable'>86 89 90
-apple banana carrot 
-</pre><br> 	  				<h4>알고리즘</h4> 				<pre style='white-space:normal;'>프로그램 시작 <br>&nbsp; &nbsp;먼저, 점수 정렬 후 출력 <br>&nbsp; &nbsp;단어 정렬 후 출력 <br>프로그램 종료 <br> <br>정렬 <br>&nbsp; &nbsp;마지막 칸에 가장 큰 값을 저장하면서 한칸씩 앞으로 영역 좁혀가기 <br>&nbsp; &nbsp;&nbsp; &nbsp;영역의 첫번째 칸부터 인접한 두 값을 비교하면서 <br>&nbsp; &nbsp;&nbsp; &nbsp;앞이 뒤보다 크면 두 값을 맞바꾸기하면서 뒤쪽에 큰 값을 저장 <br></pre> 				 		 				<br><h4>프로그램 코드 <input id='btn' type='button' value='실행순서 및 메모리상태 확인' onclick='sP3f5();'/></h4>  				<div id = "codeBox"><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./Chapter19/GenericMethodMain.java</font>
-</pre><pre id="code0" class="unselectable codeClass">	 
-</pre><pre id="code0" class="unselectable codeClass">	public class GenericMethodMain
+<html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script type="text/javascript" src="../Js0J1f/J1904.js"></script> 	</head> 	<body onkeydown='sP3f4();' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> JAVA 프로그래밍 </div> 			<div id = "navigationBox"><ol start=1><li><a href='../Jf1i/Jf1i0.html'>JAVA 프로그래밍 시작</a></li><li><a href='../Jf2i/Jf2i0.html'>출력</a></li><li><a href='../Jf3i/Jf3i0.html'>입력</a></li><li><a href='../Jf4i/Jf4i0.html'>변수</a></li><li><a href='../Jf5i/Jf5i0.html'>연산자</a></li><li><a href='../Jf6i/Jf6i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Jf7i/Jf7i0.html'>선택문(if)</a></li><li><a href='../Jf8i/Jf8i0.html'>반복문(while)</a></li><li><a href='../Jf9i/Jf9i0.html'>반복문(for)</a></li><li><a href='../Jg0i/Jg0i0.html'>배열</a></li><li><a href='../Jg1i/Jg1i0.html'>문자열/컬렉션</a></li><li><a href='../Jg2i/Jg2i0.html'>클래스/패키지</a></li><li><a href='../Jg3i/Jg3i0.html'>상속/다형성</a></li><li><a href='../Jg4i/Jg4i0.html'>GUI기초</a></li><li><a href='../Jg5i/Jg5i0.html'>GUI응용</a></li><li><a href='../Jg6i/Jg6i0.html'>예외/스레드</a></li><li><a href='../Jg7i/Jg7i0.html'>파일입출력</a></li><li><a href='../Jg8i/Jg8i0.html'>네트워크(1:1)</a></li><li><a href='../Jg9i/Jg9i0.html'>네트워크(1:n)</a></li><ul><li><a href='../Jg9i/Jg9i1.html'>1:n 채팅(서버)</a></li><li><a href='../Jg9i/Jg9i2.html'>1:n 채팅(클라이언트)</a></li><li><a href='../Jg9i/Jg9i3.html'>1:n 가전(서버)</a></li><li><a href='../Jg9i/Jg9i4.html'>1:n 가전(리모컨)</a></li><ul><li><a href='Jg9i4.html'>코드읽기</a></li><li><a href='Jg9i4s.html'>실행순서</a></li><li><a href='https://github.com/CodeReading101/JAVA/blob/main/Chapter19/RemoteController.java' target='code'>소스코드</a></li></ul><li><a href='../Jg9i/Jg9i5.html'>1:n 가전(TV)</a></li></ul><li><a href='../Jh0i/Jh0i0.html'>열거형/제네릭</a></li><li><a href='../Jh1i/Jh1i0.html'>재귀호출</a></li></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>네트워크를 바탕으로 여러 가전을 제어하기 위한 리모컨 프로그램입니다 이를 해결하는 프로그램을 작성하세요 </pre> 				
+<img src='https://shyprogrammer351.github.io/ig3i/remoteControl/network/network_021.jpg' width='300'/>
+<img src='https://shyprogrammer351.github.io/ig3i/remoteControl/network/network_022.jpg' width='300'/>
+<pre> 
+</pre><br> 	  				<h4>알고리즘 설계</h4> 				<pre style='white-space:normal;'>가전 네트워크 초기화 <br>&nbsp; &nbsp;네트워크 클라이언트 연결 초기화 <br>&nbsp; &nbsp;&nbsp; &nbsp;클라이언트에서 서버로 연결 요청 <br>&nbsp; &nbsp;&nbsp; &nbsp;네트워크 입출력 연결 후 데이터가 도착할 때까지 대기 <br> <br>리모컨 버튼 클릭시 가전제품에게 결과 전송 <br>&nbsp; &nbsp;리모컨 클릭 결과 확인 <br>&nbsp; &nbsp;상대편에게 네트워크로 데이터 전송 <br> <br>리모컨 클릭 결과 도착시 가전제품 상태 업데이트 <br>&nbsp; &nbsp;상대편이 네트워크로 보낸 데이터 읽기 <br>&nbsp; &nbsp;읽은 데이터를 바탕으로 가전제품 상태 업데이트 <br> <br>가전 네트워크 종료 <br>&nbsp; &nbsp;네트워크 종료 <br></pre> 				<br>&nbsp; <span style='font-family:arial; font-size:14px;'>리모컨 클라이언트 프로그램의 GUI 및 클래스 다이어그램 </span> <br><br>&nbsp; 
+<img src='https://shyprogrammer351.github.io/ig3i/remoteControl/network/sequence_controller.jpg' width='800'> <br><br>&nbsp; <span style='font-family:arial; font-size:14px;'>리모컨 클라이언트 프로그램의 네트워크 연결 초기화 과정</span>  <br><br>&nbsp; 
+<img src='https://shyprogrammer351.github.io/ig3i/remoteControl/network/sequence_controller_init.jpg' width='500'> <br><br>&nbsp; <span style='font-family:arial; font-size:14px;'>리모컨 클라이언트 프로그램의 클라이언트에서 서버로 데이터 전송 과정</span> <br><br>&nbsp; 
+<img src='https://shyprogrammer351.github.io/ig3i/remoteControl/network/sequence_controller_send.jpg' width='500'> <br><br>&nbsp; <span style='font-family:arial; font-size:14px;'>리모컨 클라이언트 프로그램의 네트워크 종료 과정</span> <br><br>&nbsp; 
+<img src='https://shyprogrammer351.github.io/ig3i/remoteControl/network/sequence_controller_close.jpg' width='500'> <br> &nbsp; 		 				<br> 				<table> 					<tr> 						<td><h4> 프로그램 구현 </h4> </td> 						<td> &nbsp; &nbsp; &nbsp; <input id='btn' type='button' value='실행 순서·상태 점검' onclick='sP3f5();'/><br> &nbsp; </td> 						<td> <pre style='white-space:normal; width:400px;'> ※ 단계별 점검: A키(이전), D키(다음) <br> &nbsp; </pre></td> 					</tr> 				</table> 				<div id = "codeBox">
+<pre id="codeE001" class="unselectable codeClass">E001	<font color="green">// 클라이언트에서 연결 요청하면 서버는 네트워크 연결 초기화</font>
+</pre>
+<pre id="codeE002" class="unselectable codeClass">E002	<font color="green">// 서버 데이터가 도착할 때까지 계속 대기</font>
+</pre>
+<pre id="codeE003" class="unselectable codeClass">E003	<font color="green">// (수신전용스레드와 별개로) 메인 스레드 N41 이후 실행중</font>
+</pre>
+<pre id="codeE004" class="unselectable codeClass">E004	<font color="green">// 버튼을 클릭할 때까지 계속 대기</font>
+</pre>
+<pre id="codeE005" class="unselectable codeClass">E005	<font color="green">// 리모컨 전원버튼 클릭</font>
+</pre>
+<pre id="codeE006" class="unselectable codeClass">E006	<font color="green">// 서버로 데이터([RMTC] [리모컨] POWER) 전송</font>
+</pre>
+<pre id="codeE007" class="unselectable codeClass">E007	<font color="green">// 리모컨 우측버튼 클릭</font>
+</pre>
+<pre id="codeE008" class="unselectable codeClass">E008	<font color="green">// 서버로 데이터([RMTC] [리모컨] RIGHT) 전송</font>
+</pre>
+<pre id="codeE009" class="unselectable codeClass">E009	<font color="green">// 프로그램 종료버튼(우측상단 X) 클릭</font>
+</pre>
+<pre id="codeE010" class="unselectable codeClass">E010	<font color="green">// 메인스레드와 수신전용스레드가 모두 종료하여 프로그램 종료</font>
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./Chapter19/RemoteController.java</font>
+</pre><pre id="code0" class="unselectable codeClass">	import javax.swing.*;
+</pre><pre id="code0" class="unselectable codeClass">	import java.awt.event.*;
+</pre><pre id="code0" class="unselectable codeClass">	import remoteControl.RemoteControlNetwork;
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">	<font color="green">// 리모컨으로 제어하는 리모컨 프로그램의 네트워크 클라이언트 버전</font>
+</pre><pre id="code0" class="unselectable codeClass">	public class RemoteController
 </pre><pre id="code0" class="unselectable codeClass">	{
-</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 정렬 </b></font>
-</pre>
-<pre id="codeFb" class="unselectable codeClass">Fb		public static &lt;T extends Comparable&lt;T&gt;&gt; void sort( T[] list ) {
-</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 마지막 칸에 가장 큰 값을 저장하면서 한칸씩 앞으로 영역 좁혀가기 </b></font>
-</pre><pre id="code0" class="unselectable codeClass">			for ( int last = list.length - 1; last &gt;= 0; last-- ) {
-</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 영역의 첫번째 칸부터 인접한 두 값을 비교하면서  </b></font>
-</pre><pre id="code0" class="unselectable codeClass">				for ( int index = 0; index <a href='../Jf4i/Jf4i0.html#2' target='keyword'>&lt;</a> last; index++ ) {
-</pre><pre id="code0" class="unselectable codeClass">					<font color="green">//<b> 앞이 뒤보다 크면 두 값을 맞바꾸기하면서 뒤쪽에 큰 값을 저장  </b></font>
-</pre><pre id="code0" class="unselectable codeClass">					<a href='../Jf6i/Jf6i0.html' target='keyword'>if</a> ( list[ index ].compareTo( list[ index + 1 ] ) <a href='../Jf4i/Jf4i0.html#2' target='keyword'>&gt;</a> 0 ) {
-</pre><pre id="code0" class="unselectable codeClass">						T temp = list[ index ];
-</pre><pre id="code0" class="unselectable codeClass">						list[ index ] = list[ index + 1 ];
-</pre><pre id="code0" class="unselectable codeClass">						list[ index + 1 ] = temp;
-</pre><pre id="code0" class="unselectable codeClass">					}
-</pre><pre id="code0" class="unselectable codeClass">				}
-</pre><pre id="code0" class="unselectable codeClass">			}
-</pre>
-<pre id="codeFe" class="unselectable codeClass">Fe		}
-</pre><pre id="code0" class="unselectable codeClass">		 
-</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 프로그램 시작  </b></font>
 </pre>
 <pre id="code1" class="unselectable codeClass">1		public static void main( String[] args ) {
-</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 먼저, 점수 정렬 후 출력   </b></font>
-</pre><pre id="code0" class="unselectable codeClass">			Integer[] scores = new Integer[]{ 90, 89, 86 };
+</pre><pre id="code0" class="unselectable codeClass">			final String imagePath = "C : \\Users\\user\\Downloads\\JAVA-main\\src\\remoteControl\\image\\";
+</pre><pre id="code0" class="unselectable codeClass">			String serverIP = "localhost";
 </pre>
-<pre id="code2" class="unselectable codeClass">2			sort( scores );
-</pre><pre id="code0" class="unselectable codeClass">			for( int score : scores )
-</pre><pre id="code0" class="unselectable codeClass">			    System.out.print( score + " "  );
+<pre id="code2" class="unselectable codeClass">2			RemoteControlNetwork panel =
 </pre>
-<pre id="code3" class="unselectable codeClass">3			System.out.println();
-</pre><pre id="code0" class="unselectable codeClass">	 
-</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 단어 정렬 후 출력  </b></font>
-</pre><pre id="code0" class="unselectable codeClass">			<a href='../Jf1i/Jf1i0.html' target='keyword'>String</a>[] words = new <a href='../Jf1i/Jf1i0.html' target='keyword'>String</a>[]{ "carrot", "banana", "apple" };
+<pre id="code3" class="unselectable codeClass">3			                                  new RemoteControlNetwork( imagePath, serverIP );
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">			JFrame frame = new JFrame( "리모컨(클라이언트)" );
+</pre><pre id="code0" class="unselectable codeClass">			frame.getContentPane().add( panel );
+</pre><pre id="code0" class="unselectable codeClass">			frame.addWindowListener( new WindowAdapter() {
 </pre>
-<pre id="code4" class="unselectable codeClass">4			sort( words );
-</pre><pre id="code0" class="unselectable codeClass">			for( <a href='../Jf1i/Jf1i0.html' target='keyword'>String</a> word : words )
-</pre><pre id="code0" class="unselectable codeClass">			    System.out.print( word + " "  );
-</pre><pre id="code0" class="unselectable codeClass">	 
-</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 프로그램 종료   </b></font>
+<pre id="codeWb" class="unselectable codeClass">Wb				public void windowClosing( WindowEvent event ) {
 </pre>
-<pre id="code5" class="unselectable codeClass">5		}
+<pre id="codeW1" class="unselectable codeClass">W1					panel.close();
+</pre>
+<pre id="codeWe" class="unselectable codeClass">We				}
+</pre><pre id="code0" class="unselectable codeClass">			} );
+</pre><pre id="code0" class="unselectable codeClass">			frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
+</pre><pre id="code0" class="unselectable codeClass">			frame.pack();
+</pre><pre id="code0" class="unselectable codeClass">			frame.setVisible( true );
+</pre>
+<pre id="code4" class="unselectable codeClass">4		}
 </pre><pre id="code0" class="unselectable codeClass">	}
-</pre></div>	 	 				<br><h4>실행 순서</h4> 				<pre id = "sP3d4" style='white-space:normal; width:800px;'> </pre> 				<pre style='white-space:normal;'> 					※ 실행순서 및 메모리상태는 A키(이전) 및 D키(다음)를 눌러도 확인할 수 있습니다  				</pre> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 			<div id = "floatingBox" style = "top:200px;left:900px;margin:0px;padding:0px;"> 				<pre id = "outputBox" class ="outputBox" style = "color:White;height:50px;width:172px;padding:10px;margin:0px;"></pre>  				<div id = "intermediateResult"> 					<img id = "sP3d7"> 					<table style = "border-spacing:0px;margin:0px;table-layout:auto;"> 						<tbody id = "sP3d8"></tbody> 					</table> 				</div> 			</div> 		</div> 	</body> </html> 
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./src/remoteControl/RemoteControlNetwork.java</font>
+</pre><pre id="code0" class="unselectable codeClass">	package remoteControl;
+</pre><pre id="code0" class="unselectable codeClass">	import java.awt.event.ActionEvent;
+</pre><pre id="code0" class="unselectable codeClass">	import network.Network;
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">	<font color="green">// 리모컨 프로그램의 네트워크 담당 클래스</font>
+</pre><pre id="code0" class="unselectable codeClass">	public class RemoteControlNetwork extends RemoteControllerPanel implements Runnable
+</pre><pre id="code0" class="unselectable codeClass">	{
+</pre><pre id="code0" class="unselectable codeClass">		private Network network;
+</pre><pre id="code0" class="unselectable codeClass">		private String  id;
+</pre><pre id="code0" class="unselectable codeClass">		private final String header = "[RMTC]";
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 가전 네트워크 초기화 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 리모컨 네트워크 초기화</font>
+</pre>
+<pre id="codeRN1b" class="unselectable codeClass">RN1b		public RemoteControlNetwork( String imgPath, String serverIP ) {
+</pre>
+<pre id="codeRN11" class="unselectable codeClass">RN11			super( imgPath );
+</pre>
+<pre id="codeRN12" class="unselectable codeClass">RN12			connectAsClient( serverIP, this.getClass().getSimpleName() );
+</pre>
+<pre id="codeRN1e" class="unselectable codeClass">RN1e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">// TV,로봇청소기,에어컨 네트워크 초기화</font>
+</pre>
+<pre id="codeRN2b" class="unselectable codeClass">RN2b		public RemoteControlNetwork( RemoteControl appliance, String serverIP ) {
+</pre>
+<pre id="codeRN21" class="unselectable codeClass">RN21			super( appliance );
+</pre>
+<pre id="codeRN22" class="unselectable codeClass">RN22			connectAsClient( serverIP, appliance.getClass().getSimpleName() );
+</pre>
+<pre id="codeRN2e" class="unselectable codeClass">RN2e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		 <font color="green">// 네트워크 클라이언트 연결 초기화</font>
+</pre>
+<pre id="codeRN3b" class="unselectable codeClass">RN3b		public void connectAsClient( String serverIP, String applianceName ) {
+</pre><pre id="code0" class="unselectable codeClass">			id = "[" + applianceName +"]";
+</pre>
+<pre id="codeRN31" class="unselectable codeClass">RN31			network =
+</pre>
+<pre id="codeRN32" class="unselectable codeClass">RN32			          new Network();
+</pre>
+<pre id="codeRN33" class="unselectable codeClass">RN33			network.connectAsClient( serverIP, this );
+</pre>
+<pre id="codeRN3e" class="unselectable codeClass">RN3e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 리모컨 버튼 클릭시 가전제품에게 결과 전송 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">		@Override
+</pre>
+<pre id="codeRN4b" class="unselectable codeClass">RN4b		public void actionPerformed( ActionEvent event ) {
+</pre><pre id="code0" class="unselectable codeClass">			String message = "";
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 리모컨 클릭 결과 확인 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">			if ( event.getSource() == button[POWER])
+</pre><pre id="code0" class="unselectable codeClass">				message = header + "POWER";
+</pre><pre id="code0" class="unselectable codeClass">			else if ( event.getSource() == button[UP])
+</pre><pre id="code0" class="unselectable codeClass">				message = header + "UP";
+</pre><pre id="code0" class="unselectable codeClass">			else if ( event.getSource() == button[DOWN])
+</pre><pre id="code0" class="unselectable codeClass">				message = header + "DOWN";
+</pre><pre id="code0" class="unselectable codeClass">			else if ( event.getSource() == button[LEFT])
+</pre><pre id="code0" class="unselectable codeClass">				message = header + "LEFT";
+</pre><pre id="code0" class="unselectable codeClass">			else if ( event.getSource() == button[RIGHT])
+</pre><pre id="code0" class="unselectable codeClass">				message = header + "RIGHT";
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">// 상대편에게 네트워크로 리모컨 클릭 결과 전송</font>
+</pre>
+<pre id="codeRN41" class="unselectable codeClass">RN41			network.write( message );
+</pre>
+<pre id="codeRN4e" class="unselectable codeClass">RN4e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 리모컨 클릭 결과 도착시 가전제품 상태 업데이트 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">		@Override
+</pre>
+<pre id="codeRN5b" class="unselectable codeClass">RN5b		public void run(){
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">//<b> 상대편이 네트워크로 보낸 데이터 읽기 </b></font>
+</pre>
+<pre id="codeRN51" class="unselectable codeClass">RN51			for ( String message = null; ( message =
+</pre>
+<pre id="codeRN52" class="unselectable codeClass">RN52			                                          network.read() )
+</pre><pre id="code0" class="unselectable codeClass">			                                                               != null; ) {
+</pre><pre id="code0" class="unselectable codeClass">				<font color="green">// 리모컨 프로그램 메시지가 아니면 무시</font>
+</pre><pre id="code0" class="unselectable codeClass">				if ( !message.contains( header ) )
+</pre><pre id="code0" class="unselectable codeClass">					continue;
+</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 읽은 데이터를 바탕으로 가전제품 상태 업데이트 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">				else if ( message.contains( "POWER" ) && ( appliance != null ) )
+</pre>
+<pre id="codeRN53" class="unselectable codeClass">RN53					appliance.clickPower();
+</pre><pre id="code0" class="unselectable codeClass">				else if ( message.contains( "UP" ) && ( appliance != null ) )
+</pre>
+<pre id="codeRN54" class="unselectable codeClass">RN54					appliance.clickUp();
+</pre><pre id="code0" class="unselectable codeClass">				else if ( message.contains( "DOWN" ) && ( appliance != null ) )
+</pre>
+<pre id="codeRN55" class="unselectable codeClass">RN55					appliance.clickDown();
+</pre><pre id="code0" class="unselectable codeClass">				else if ( message.contains( "LEFT" ) && ( appliance != null ) )
+</pre>
+<pre id="codeRN56" class="unselectable codeClass">RN56					appliance.clickLeft();
+</pre><pre id="code0" class="unselectable codeClass">				else if ( message.contains( "RIGHT" ) && ( appliance != null ) )
+</pre>
+<pre id="codeRN57" class="unselectable codeClass">RN57					appliance.clickRight();
+</pre>
+<pre id="codeRN58" class="unselectable codeClass">RN58			}
+</pre>
+<pre id="codeRN5e" class="unselectable codeClass">RN5e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 가전 네트워크 종료 </b></font>
+</pre>
+<pre id="codeRN6b" class="unselectable codeClass">RN6b		public void close() {
+</pre><pre id="code0" class="unselectable codeClass">			network.write( header + id + " 네트워크 연결 종료" );
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">// 네트워크 종료</font>
+</pre>
+<pre id="codeRN61" class="unselectable codeClass">RN61			network.close();
+</pre>
+<pre id="codeRN6e" class="unselectable codeClass">RN6e		}
+</pre><pre id="code0" class="unselectable codeClass">	}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./src/network/Network.java</font>
+</pre><pre id="code0" class="unselectable codeClass">	package network;
+</pre><pre id="code0" class="unselectable codeClass">	import java.io.*;
+</pre><pre id="code0" class="unselectable codeClass">	import java.net.*;
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">	<font color="green">// 네트워크 연결 및 입출력 클래스</font>
+</pre><pre id="code0" class="unselectable codeClass">	public class Network
+</pre><pre id="code0" class="unselectable codeClass">	{
+</pre><pre id="code0" class="unselectable codeClass">		public static final int serverPort = 7700;
+</pre><pre id="code0" class="unselectable codeClass">		protected ServerSocket serverSocket;
+</pre><pre id="code0" class="unselectable codeClass">		protected Socket socket;
+</pre><pre id="code0" class="unselectable codeClass">		private BufferedReader in;
+</pre><pre id="code0" class="unselectable codeClass">		private PrintWriter out;
+</pre><pre id="code0" class="unselectable codeClass">		private Thread waitForCounterpart;
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 네트워크 클래스 초기화</font>
+</pre>
+<pre id="codeN1b" class="unselectable codeClass">N1b		public Network() {
+</pre><pre id="code0" class="unselectable codeClass">			serverSocket = null;
+</pre><pre id="code0" class="unselectable codeClass">			socket = null;
+</pre><pre id="code0" class="unselectable codeClass">			in = null;
+</pre><pre id="code0" class="unselectable codeClass">			out = null;
+</pre><pre id="code0" class="unselectable codeClass">			waitForCounterpart = null;
+</pre>
+<pre id="codeN1e" class="unselectable codeClass">N1e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 네트워크 서버 연결 초기화 </b></font>
+</pre>
+<pre id="codeN2b" class="unselectable codeClass">N2b		public void connectAsServer( Runnable obj ) {
+</pre><pre id="code0" class="unselectable codeClass">			try {
+</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 서버 소켓 연결 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">				serverSocket = new ServerSocket( serverPort );
+</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 클라이언트에서 서버로 연결 요청시 연결 활성화 </b></font>
+</pre>
+<pre id="codeN21" class="unselectable codeClass">N21				socket =
+</pre>
+<pre id="codeN22" class="unselectable codeClass">N22				         serverSocket.accept();
+</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 네트워크 입출력 연결 후 데이터가 도착할 때까지 대기 </b></font>
+</pre>
+<pre id="codeN23" class="unselectable codeClass">N23				connectInOut( obj );
+</pre><pre id="code0" class="unselectable codeClass">			} catch ( Exception e ) {
+</pre><pre id="code0" class="unselectable codeClass">				e.printStackTrace();
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre>
+<pre id="codeN2e" class="unselectable codeClass">N2e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 네트워크 클라이언트 연결 초기화 </b></font>
+</pre>
+<pre id="codeN3b" class="unselectable codeClass">N3b		public void connectAsClient( String serverIP, Runnable obj ) {
+</pre><pre id="code0" class="unselectable codeClass">			try {
+</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 클라이언트에서 서버로 연결 요청 </b></font>
+</pre>
+<pre id="codeN31" class="unselectable codeClass">N31				socket =
+</pre>
+<pre id="codeN32" class="unselectable codeClass">N32				         new Socket( serverIP, serverPort );
+</pre><pre id="code0" class="unselectable codeClass">				<font color="green">//<b> 네트워크 입출력 연결 후 데이터가 도착할 때까지 대기 </b></font>
+</pre>
+<pre id="codeN33" class="unselectable codeClass">N33				connectInOut( obj );
+</pre><pre id="code0" class="unselectable codeClass">			} catch ( Exception e ) {
+</pre><pre id="code0" class="unselectable codeClass">				e.printStackTrace();
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre>
+<pre id="codeN3e" class="unselectable codeClass">N3e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 네트워크 입출력 초기화</font>
+</pre>
+<pre id="codeN4b" class="unselectable codeClass">N4b		public void connectInOut( Runnable obj ) {
+</pre><pre id="code0" class="unselectable codeClass">			try {
+</pre><pre id="code0" class="unselectable codeClass">				<font color="green">// 네트워크 입출력 연결</font>
+</pre><pre id="code0" class="unselectable codeClass">				in = new BufferedReader( new InputStreamReader( socket.getInputStream() ));
+</pre><pre id="code0" class="unselectable codeClass">				out = new PrintWriter( socket.getOutputStream(), true );
+</pre><pre id="code0" class="unselectable codeClass">				<font color="green">// 네트워크에 데이터가 도착할 때까지 대기 시작</font>
+</pre><pre id="code0" class="unselectable codeClass">				waitForCounterpart = new Thread( obj );
+</pre>
+<pre id="codeN41" class="unselectable codeClass">N41				waitForCounterpart.start();
+</pre><pre id="code0" class="unselectable codeClass">			} catch ( Exception e ) {
+</pre><pre id="code0" class="unselectable codeClass">				e.printStackTrace();
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre>
+<pre id="codeN4e" class="unselectable codeClass">N4e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 상대편이 네트워크로 보낸 데이터 읽기</font>
+</pre>
+<pre id="codeN5b" class="unselectable codeClass">N5b		public String read() {
+</pre><pre id="code0" class="unselectable codeClass">			try {
+</pre><pre id="code0" class="unselectable codeClass">				if ( this.isConnecting() == true )
+</pre>
+<pre id="codeN51" class="unselectable codeClass">N51					return
+</pre>
+<pre id="codeN52" class="unselectable codeClass">N52					       in.readLine();
+</pre><pre id="code0" class="unselectable codeClass">			} catch ( Exception e ) {
+</pre><pre id="code0" class="unselectable codeClass">				e.printStackTrace();
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">			return null;
+</pre>
+<pre id="codeN5e" class="unselectable codeClass">N5e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 상대편에게 네트워크로 데이터 전송 </b></font>
+</pre>
+<pre id="codeN6b" class="unselectable codeClass">N6b		public void write( String data ) {
+</pre><pre id="code0" class="unselectable codeClass">			try {
+</pre><pre id="code0" class="unselectable codeClass">				if ( this.isConnecting() == true )
+</pre>
+<pre id="codeN61" class="unselectable codeClass">N61					out.println( data );
+</pre><pre id="code0" class="unselectable codeClass">			} catch ( Exception e ) {
+</pre><pre id="code0" class="unselectable codeClass">				e.printStackTrace();
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre>
+<pre id="codeN6e" class="unselectable codeClass">N6e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 네트워크 연결 상태 확인</font>
+</pre><pre id="code0" class="unselectable codeClass">		public boolean isConnecting() {
+</pre><pre id="code0" class="unselectable codeClass">			if ( ( socket != null )
+</pre><pre id="code0" class="unselectable codeClass">					&& ( in != null )
+</pre><pre id="code0" class="unselectable codeClass">					&& ( out != null )
+</pre><pre id="code0" class="unselectable codeClass">					&& ( waitForCounterpart != null )
+</pre><pre id="code0" class="unselectable codeClass">					&& ( waitForCounterpart.getState() != Thread.State.TERMINATED ) )
+</pre><pre id="code0" class="unselectable codeClass">				return true;
+</pre><pre id="code0" class="unselectable codeClass">			else
+</pre><pre id="code0" class="unselectable codeClass">				return false;
+</pre><pre id="code0" class="unselectable codeClass">		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 네트워크 종료 </b></font>
+</pre>
+<pre id="codeN7b" class="unselectable codeClass">N7b		public void close() {
+</pre><pre id="code0" class="unselectable codeClass">			try {
+</pre><pre id="code0" class="unselectable codeClass">				if ( waitForCounterpart != null ) {
+</pre><pre id="code0" class="unselectable codeClass">					waitForCounterpart.interrupt();
+</pre><pre id="code0" class="unselectable codeClass">					waitForCounterpart = null;
+</pre><pre id="code0" class="unselectable codeClass">				}
+</pre><pre id="code0" class="unselectable codeClass">				if ( in != null ) {
+</pre><pre id="code0" class="unselectable codeClass">					in.close();
+</pre><pre id="code0" class="unselectable codeClass">					in=null;
+</pre><pre id="code0" class="unselectable codeClass">				}
+</pre><pre id="code0" class="unselectable codeClass">				if ( out != null ) {
+</pre><pre id="code0" class="unselectable codeClass">					out.flush();
+</pre><pre id="code0" class="unselectable codeClass">					out.close();
+</pre><pre id="code0" class="unselectable codeClass">					out = null;
+</pre><pre id="code0" class="unselectable codeClass">				}
+</pre><pre id="code0" class="unselectable codeClass">				if ( socket != null ) {
+</pre><pre id="code0" class="unselectable codeClass">					socket.close();
+</pre><pre id="code0" class="unselectable codeClass">					socket = null;
+</pre><pre id="code0" class="unselectable codeClass">				}
+</pre><pre id="code0" class="unselectable codeClass">				if ( serverSocket != null ) {
+</pre><pre id="code0" class="unselectable codeClass">					serverSocket.close();
+</pre><pre id="code0" class="unselectable codeClass">					serverSocket = null;
+</pre><pre id="code0" class="unselectable codeClass">				}
+</pre><pre id="code0" class="unselectable codeClass">			} catch ( Exception e ) {
+</pre><pre id="code0" class="unselectable codeClass">				e.printStackTrace();
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre>
+<pre id="codeN7e" class="unselectable codeClass">N7e		}
+</pre><pre id="code0" class="unselectable codeClass">	}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./src/remoteControl/RemoteControllerPanel.java</font>
+</pre><pre id="code0" class="unselectable codeClass">	package remoteControl;
+</pre><pre id="code0" class="unselectable codeClass">	import javax.swing.*;
+</pre><pre id="code0" class="unselectable codeClass">	import java.awt.*;
+</pre><pre id="code0" class="unselectable codeClass">	import java.awt.event.*;
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">	<font color="green">// 리모컨 GUI 클래스</font>
+</pre><pre id="code0" class="unselectable codeClass">	public class RemoteControllerPanel extends JPanel implements ActionListener
+</pre><pre id="code0" class="unselectable codeClass">	{
+</pre><pre id="code0" class="unselectable codeClass">		protected JButton[] button;
+</pre><pre id="code0" class="unselectable codeClass">		public final static int POWER = 0, UP = 1, DOWN = 2, LEFT = 3, RIGHT = 4;
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 리모컨으로 제어할 수 있는 가전제품 : TV, 에어컨, 로봇청소기</font>
+</pre><pre id="code0" class="unselectable codeClass">		protected RemoteControl appliance;
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 리모컨 GUI 초기화</font>
+</pre>
+<pre id="codeR1b" class="unselectable codeClass">R1b		public RemoteControllerPanel( String imgPath ) {
+</pre><pre id="code0" class="unselectable codeClass">			this.appliance = null;
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">			<font color="green">// 리모컨 버튼의 이미지 및 리스너 초기화</font>
+</pre><pre id="code0" class="unselectable codeClass">			final String[] strButton = { "power.gif", "up.gif", "down.gif", "left.gif", "right.gif" };
+</pre><pre id="code0" class="unselectable codeClass">			button = new JButton[strButton.length];
+</pre><pre id="code0" class="unselectable codeClass">			for ( int i = 0; i &lt; strButton.length; i++ ) {
+</pre><pre id="code0" class="unselectable codeClass">				button[i]= new JButton( new ImageIcon( new ImageIcon( imgPath + strButton[i]).getImage().getScaledInstance( 30, 30, Image.SCALE_SMOOTH ) ) );
+</pre><pre id="code0" class="unselectable codeClass">				button[i].addActionListener( this );
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">			this.setPreferredSize( new Dimension( 240, 120 ) );
+</pre><pre id="code0" class="unselectable codeClass">			this.setLayout( new BorderLayout() );
+</pre><pre id="code0" class="unselectable codeClass">			this.add( button[POWER], BorderLayout.CENTER );
+</pre><pre id="code0" class="unselectable codeClass">			this.add( button[UP  ], BorderLayout.NORTH );
+</pre><pre id="code0" class="unselectable codeClass">			this.add( button[DOWN], BorderLayout.SOUTH );
+</pre><pre id="code0" class="unselectable codeClass">			this.add( button[LEFT], BorderLayout.WEST );
+</pre><pre id="code0" class="unselectable codeClass">			this.add( button[RIGHT], BorderLayout.EAST );
+</pre>
+<pre id="codeR1e" class="unselectable codeClass">R1e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 가전제품(TV, 로봇청소기, 에어컨)을 제어하는 리모컨 GUI 초기화</font>
+</pre>
+<pre id="codeR2b" class="unselectable codeClass">R2b		public RemoteControllerPanel( String imgPath, RemoteControl appliance ) {
+</pre><pre id="code0" class="unselectable codeClass">			this( imgPath );
+</pre><pre id="code0" class="unselectable codeClass">			this.appliance = appliance;
+</pre>
+<pre id="codeR2e" class="unselectable codeClass">R2e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 가전제품(TV, 로봇청소기, 에어컨)을 제어하는 리모컨 초기화</font>
+</pre>
+<pre id="codeR3b" class="unselectable codeClass">R3b		public RemoteControllerPanel( RemoteControl appliance ) {
+</pre><pre id="code0" class="unselectable codeClass">			this.appliance = appliance;
+</pre>
+<pre id="codeR3e" class="unselectable codeClass">R3e		}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 리모컨 버튼을 클릭시 가전제품 상태 업데이트</font>
+</pre><pre id="code0" class="unselectable codeClass">		@Override
+</pre>
+<pre id="codeR4b" class="unselectable codeClass">R4b		public void actionPerformed( ActionEvent event ) {
+</pre><pre id="code0" class="unselectable codeClass">			if ( ( event.getSource() == button[POWER]) && ( appliance != null ) )
+</pre><pre id="code0" class="unselectable codeClass">				appliance.clickPower();
+</pre><pre id="code0" class="unselectable codeClass">			else if ( ( event.getSource() == button[UP]) && ( appliance != null ) )
+</pre><pre id="code0" class="unselectable codeClass">				appliance.clickUp();
+</pre><pre id="code0" class="unselectable codeClass">			else if ( ( event.getSource() == button[DOWN]) && ( appliance != null ) )
+</pre><pre id="code0" class="unselectable codeClass">				appliance.clickDown();
+</pre><pre id="code0" class="unselectable codeClass">			else if ( ( event.getSource() == button[LEFT]) && ( appliance != null ) )
+</pre><pre id="code0" class="unselectable codeClass">				appliance.clickLeft();
+</pre><pre id="code0" class="unselectable codeClass">			else if ( ( event.getSource() == button[RIGHT]) && ( appliance != null ) )
+</pre><pre id="code0" class="unselectable codeClass">				appliance.clickRight();
+</pre>
+<pre id="codeR4e" class="unselectable codeClass">R4e		}
+</pre><pre id="code0" class="unselectable codeClass">	}
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./src/remoteControl/RemoteControl.java</font>
+</pre><pre id="code0" class="unselectable codeClass">	package remoteControl;
+</pre><pre id="code0" class="unselectable codeClass">		  
+</pre><pre id="code0" class="unselectable codeClass">	<font color="green">// 전원, 상, 하, 좌, 우 버튼이 있는 리모컨</font>
+</pre><pre id="code0" class="unselectable codeClass">	public interface RemoteControl
+</pre><pre id="code0" class="unselectable codeClass">	{
+</pre><pre id="code0" class="unselectable codeClass">		boolean ON = true, OFF = false;
+</pre><pre id="code0" class="unselectable codeClass">		void clickPower();
+</pre><pre id="code0" class="unselectable codeClass">		void clickUp();
+</pre><pre id="code0" class="unselectable codeClass">		void clickDown();
+</pre><pre id="code0" class="unselectable codeClass">		void clickLeft();
+</pre><pre id="code0" class="unselectable codeClass">		void clickRight();
+</pre><pre id="code0" class="unselectable codeClass">	}
+</pre></div>	 	 				<br><h4>실행 순서 확인</h4> 				<pre id = "sP3d4" style='white-space:normal; width:800px;'> </pre> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 			<div id = "floatingBox" style = "top:200px;left:900px;margin:0px;padding:0px;"> 				<pre id = "outputBox" class ="outputBox" style = "color:White;height:0px;width:0px;padding:0px;margin:0px;"></pre>  				<div id = "intermediateResult"> 					<img id = "sP3d7"> 					<table style = "border-spacing:0px;margin:0px;table-layout:auto;"> 						<tbody id = "sP3d8"></tbody> 					</table> 				</div> 			</div> 		</div> 	</body> </html> 
